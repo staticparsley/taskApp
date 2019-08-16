@@ -1,0 +1,23 @@
+{
+  "name": "taskapp",
+  "version": "1.0.0",
+  "description": "just brushing up on things... don't take this too seriously -_-",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staticparsley/taskApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/staticparsley/taskApp/issues"
+  },
+  "homepage": "https://github.com/staticparsley/taskApp#readme",
+  "dependencies": {
+    "mongoose": "^5.6.9",
+    "validator": "^10.11.0"
+  }
+}
