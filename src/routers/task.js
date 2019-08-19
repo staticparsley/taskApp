@@ -1,7 +1,6 @@
 const express = require('express');
 const router = new express.Router();
 const auth = require('../middleware/auth');
-
 const Task = require('../models/task');
 
 router.post('/tasks', auth, async (req, res) => {
@@ -30,6 +29,7 @@ router.get('/tasks', auth, async (req, res) => {
     if(req.query.sortBy) {
         const parts = req.query.sortBy.split(':');
         sort[parts[0]] = parts[1] === 'desc' ? -1 : 1;
+        console.log(sort);
     }
 
     try {
